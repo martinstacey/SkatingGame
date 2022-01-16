@@ -1,5 +1,5 @@
 let restore = false;
-
+let count = 0;
 function setup() {
   createCanvas(displayWidth, displayHeight);
 }
@@ -16,7 +16,8 @@ function draw() {
     circle(touches[0].x,touches[0].y,100)
     circle(touches[1].x,touches[1].y,100)
   }
-
+  count++;
+  text(count,width/3,height/3);
 }
 
 function keyPressed(){
